@@ -1,6 +1,6 @@
 window.promises = [];
 
-let DivElement=document.getElementById("output");
+let divElement=document.getElementById("output");
 
 let prom1=new Promise((resolve,reject)=>{
 	setTimeout(()=>{
