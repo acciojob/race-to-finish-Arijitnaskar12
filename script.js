@@ -21,10 +21,11 @@ let prom4=new Promise((resolve,reject)=>{
 let prom5=new Promise((resolve,reject)=>{
 	setTimeout(()=>{
 		resolve("5th");
-	},5000););
+	},5000);
+	);
 // Do not change the code above this
 // add your promises to the array `promises`
-Promise.any([prom1,prom2,prom3,prom4,prom5]);
-.then((data)={
+let proms=Promise.any([prom1,prom2,prom3,prom4,prom5]);
+proms.then((data)={
 	divElement.innerText=data;
 })
