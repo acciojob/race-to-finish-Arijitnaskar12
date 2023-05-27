@@ -29,8 +29,9 @@ let prom5=new Promise((resolve,reject)=>{
 });
 // Do not change the code above this
 // add your promises to the array `promises`
-let proms=Promise.any([prom1,prom2,prom3,prom4,prom5]);
-proms.then((data)={
-	// divElement.innerText=data;
-	console.log(data);
+promises=[prom1,prom2,prom3,prom4,prom5];
+let proms=Promise.any(promises);
+proms.then((data)=>{
+	divElement.innerText=data;
+	// console.log(data);
 });
