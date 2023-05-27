@@ -31,5 +31,6 @@ let prom5=new Promise((resolve,reject)=>{
 // add your promises to the array `promises`
 let proms=Promise.any([prom1,prom2,prom3,prom4,prom5]);
 proms.then((data)={
-	divElement.innerText=data;
-})
+	// divElement.innerText=data;
+	console.log(data);
+});
